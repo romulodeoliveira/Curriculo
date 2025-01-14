@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/curriculo",
             "index": "src/index.html",
+            "baseHref": "/Curriculo/",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
