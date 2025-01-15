@@ -3,10 +3,9 @@ import { Component, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
-
   ngAfterViewInit(): void {
     this.addToggleFunctionality('projects-title', 'project-content');
     this.addToggleFunctionality('voluntariado-title', 'voluntariado-content');
@@ -18,7 +17,7 @@ export class AppComponent implements AfterViewInit {
     const content = document.getElementById(contentId);
 
     if (title && content) {
-      content.style.display = 'none';  // Inicialmente escondido
+      content.style.display = 'none'; // Inicialmente escondido
       title.addEventListener('click', () => {
         // Alterna a visibilidade do conteúdo
         if (content.style.display === 'none') {
